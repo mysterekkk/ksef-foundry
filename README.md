@@ -36,7 +36,7 @@ Na rynku są inne biblioteki (m.in. oficjalne klienty C#/Java Ministerstwa Finan
 | Pakiet | Rola | Wymagania |
 |---|---|---|
 | [`luroweb/ksef-foundry`](packages/php) | SDK PHP (PSR-17/18) | PHP ≥ 8.2, `ext-openssl`, `ext-dom`, `ext-bcmath` |
-| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Adapter Laravel | Laravel 11 / 12 |
+| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Adapter Laravel | Laravel 12 |
 | [`@luroweb/ksef-foundry`](packages/typescript) | SDK TypeScript (ESM, `.d.ts`) | Node ≥ 22 |
 | [`@luroweb/nestjs-ksef-foundry`](packages/nestjs) | Adapter NestJS | NestJS 11 |
 

@@ -36,7 +36,7 @@ Other libraries exist (including the Ministry's official C#/Java clients and ind
 | Package | Role | Requirements |
 |---|---|---|
 | [`luroweb/ksef-foundry`](packages/php) | PHP SDK (PSR-17/18) | PHP ≥ 8.2, `ext-openssl`, `ext-dom`, `ext-bcmath` |
-| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Laravel adapter | Laravel 11 / 12 |
+| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Laravel adapter | Laravel 12 |
 | [`@luroweb/ksef-foundry`](packages/typescript) | TypeScript SDK (ESM, `.d.ts`) | Node ≥ 22 |
 | [`@luroweb/nestjs-ksef-foundry`](packages/nestjs) | NestJS adapter | NestJS 11 |
 

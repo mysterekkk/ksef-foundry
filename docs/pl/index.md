@@ -27,7 +27,7 @@ Dokumentacja w języku angielskim: [docs/en](../en/index.md). Notatki projektowe
 | Pakiet | Nazwa w rejestrze | Wersja | Wymagania | Rola |
 |---|---|---|---|---|
 | `packages/php` | `luroweb/ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, `ext-bcmath`, `ext-dom`, `ext-json`, `ext-libxml`, `ext-mbstring`, `ext-openssl` | rdzeń SDK dla PHP |
-| `packages/laravel` | `luroweb/laravel-ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, Laravel 11 / 12 | provider, cache tokenów, joby, komenda `ksef:check` |
+| `packages/laravel` | `luroweb/laravel-ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, Laravel 12 | provider, cache tokenów, joby, komenda `ksef:check` |
 | `packages/typescript` | `@luroweb/ksef-foundry` | 0.1.0 | Node >= 22, ESM | rdzeń SDK dla TypeScript / Node |
 | `packages/nestjs` | `@luroweb/nestjs-ksef-foundry` | 0.1.0 | Node >= 22, NestJS `^11` | moduł, serwis, filtr wyjątków, health |
 

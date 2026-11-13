@@ -27,7 +27,7 @@ Polish documentation (primary language): [docs/pl](../pl/index.md). Contributor 
 | Package | Registry name | Version | Requirements | Role |
 |---|---|---|---|---|
 | `packages/php` | `luroweb/ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, `ext-bcmath`, `ext-dom`, `ext-json`, `ext-libxml`, `ext-mbstring`, `ext-openssl` | PHP core SDK |
-| `packages/laravel` | `luroweb/laravel-ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, Laravel 11 / 12 | provider, token cache, queue jobs, `ksef:check` command |
+| `packages/laravel` | `luroweb/laravel-ksef-foundry` | 0.1.0 (pre-release) | PHP >= 8.2, Laravel 12 | provider, token cache, queue jobs, `ksef:check` command |
 | `packages/typescript` | `@luroweb/ksef-foundry` | 0.1.0 | Node >= 22, ESM | TypeScript / Node core SDK |
 | `packages/nestjs` | `@luroweb/nestjs-ksef-foundry` | 0.1.0 | Node >= 22, NestJS `^11` | module, service, exception filter, health |
 

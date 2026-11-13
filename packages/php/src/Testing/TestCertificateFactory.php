@@ -48,24 +48,16 @@ final class TestCertificateFactory
         string $commonName,
         bool $ec = false,
     ): TestCertificate {
-        $conf = tempnam(sys_get_temp_dir(), 'ksefcnf');
-        if ($conf === false) {
-            throw new CertificateException('Cannot create temporary OpenSSL config.');
-        }
-        try {
-            file_put_contents($conf, "[req]\ndistinguished_name = dn\nprompt = no\n[dn]\n[v3_leaf]\nbasicConstraints = CA:FALSE\nkeyUsage = digitalSignature, nonRepudiation\n");
-            $dn = [
-                'countryName' => 'PL',
-                'commonName' => $commonName,
-                'givenName' => $givenName,
-                'surname' => $surname,
-                'serialNumber' => $serialNumberPrefix . '-' . $serialNumberValue,
-            ];
-            $keyOpts = $ec
-                ? ['private_key_type' => OPENSSL_KEYTYPE_EC, 'curve_name' => 'prime256v1']
-                : ['private_key_type' => OPENSSL_KEYTYPE_RSA, 'private_key_bits' => 2048];
-            $opts = ['config' => $conf, 'digest_alg' => 'sha256', 'x509_extensions' => 'v3_leaf'] + $keyOpts;
-
+        $dn = [
+            'countryName' => 'PL',
+            'commonName' => $commonName,
+            'givenName' => $givenName,
+            'surname' => $surname,
+            'serialNumber' => $serialNumberPrefix . '-' . $serialNumberValue,
+        ];
+        // Own minimal openssl.cnf: never depends on (or fails because of) the system's default configuration.
+        [$certPem, $keyPem] = OpenSslConfig::run(function (string $conf) use ($dn, $ec): array {
+            $opts = OpenSslConfig::options($conf, $ec);
             $key = openssl_pkey_new($opts);
             if ($key === false) {
                 throw new CertificateException('Cannot generate key: ' . $this->lastError());
@@ -87,11 +79,9 @@ final class TestCertificateFactory
             ) {
                 throw new CertificateException('Cannot export certificate/key: ' . $this->lastError());
             }
-        } finally {
-            if (is_file($conf)) {
-                unlink($conf);
-            }
-        }
+
+            return [$certPem, $keyPem];
+        });
 
         return new TestCertificate($certPem, new SensitiveString($keyPem));
     }

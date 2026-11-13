@@ -8,7 +8,7 @@ Wyniki uruchomione lokalnie (Windows 11, PHP 8.4.20, Node 24.13, Composer 2.9.7)
 | Pakiet | Wynik | Warstwy |
 |---|---|---|
 | PHP `luroweb/ksef-foundry` | **273 testy, 4978 asercji** — OK | unit 62 · contract 35 · fault-injection 66 · invoice (FA(3), XSD) 110; PHPStan level max (src) + 6 (testy), PSR-12 bez błędów |
-| Laravel `luroweb/laravel-ksef-foundry` | **60 testów, 343 asercje** — OK (Laravel 12 / Testbench 10); Laravel 11 / Testbench 9 sprawdzono wcześniej (51 testów, przed ostatnimi poprawkami) | integracja frameworkowa (kontener, cache, kolejka bazodanowa, zdarzenia) + fault-injection; PHPStan max (larastan) |
+| Laravel `luroweb/laravel-ksef-foundry` | **60 testów, 343 asercje** — OK (Laravel 12 / Testbench 10); Laravel 11 nie jest wspierany (Composer blokuje wszystkie wydania 11.x z powodu poradników bezpieczeństwa) | integracja frameworkowa (kontener, cache, kolejka bazodanowa, zdarzenia) + fault-injection; PHPStan max (larastan) |
 | Przykład Laravel | **8 testów, 32 asercje** — OK | przez prawdziwy kernel HTTP |
 | TypeScript `@luroweb/ksef-foundry` | **306 testów w 14 plikach** — OK | unit · contract · fault-injection · invoice (FA(3)); typecheck strict, ESLint, build, `verify:pack` (tarball, ESM import, `require(esm)`, publint, attw) |
 | NestJS `@luroweb/nestjs-ksef-foundry` | **67 testów w 5 plikach** — OK | integracja frameworkowa (prawdziwy kontener DI, prawdziwe HTTP, supertest) + fault-injection; `verify:pack` |

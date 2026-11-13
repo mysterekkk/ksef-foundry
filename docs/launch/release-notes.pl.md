@@ -11,7 +11,7 @@ Pakiety są **przygotowane** do Packagist i npm, ale **nie zostały jeszcze opub
 | Pakiet | Rola |
 |---|---|
 | `luroweb/ksef-foundry` | SDK PHP (PHP 8.2+, PSR-17/18) |
-| `luroweb/laravel-ksef-foundry` | adapter Laravel 11 / 12 |
+| `luroweb/laravel-ksef-foundry` | adapter Laravel 12 |
 | `@luroweb/ksef-foundry` | SDK TypeScript (Node 22+, ESM) |
 | `@luroweb/nestjs-ksef-foundry` | adapter NestJS 11 |
 

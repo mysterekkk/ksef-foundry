@@ -58,7 +58,7 @@ composer test           # unit + feature (Testbench) + fault
 composer check          # phpcs + phpstan (larastan) + testy
 ```
 
-Zestaw adaptera uruchomiono na Laravel 12.72.0 i 11.57.1: po 51 testów (263 asercje) zielone. Aplikacja przykładowa: `cd examples/laravel && vendor/bin/phpunit --testsuite default`.
+Zestaw adaptera uruchomiono na Laravel 12.72.0: po 51 testów (263 asercje) zielone. Aplikacja przykładowa: `cd examples/laravel && vendor/bin/phpunit --testsuite default`.
 
 **TypeScript (`packages/typescript`)**
 
@@ -110,7 +110,7 @@ Ręczny workflow GitHub Actions `Live TEST (manual)` (`workflow_dispatch`, bez s
 Domyślne CI uruchamia warstwy unit, contract, fault-injection i framework (bez live):
 
 - PHP 8.2, 8.3 i 8.4 (`composer check`),
-- Laravel 11 i 12 na PHP 8.2-8.4 w czterech kombinacjach (`composer check`),
+- Laravel 12 na PHP 8.2-8.4 w trzech kombinacjach (`composer check`),
 - Node 22 i 24: build, typecheck, lint, testy, `verify:pack` oraz przykład `02:build-validate`,
 - audyt zależności produkcyjnych (`npm audit`, `composer audit`) i kontrola braku sekretów w śledzonych plikach.
 
@@ -127,7 +127,7 @@ Szczerze, na dzień 2026-11-13:
 - W PHP nie ma testu live dla listy sesji (`GET /sessions`, nie zaimplementowano), a `/sessions/{ref}/invoices/failed` oraz UPO po numerze KSeF sprawdzono tylko kształtem na serwerze lokalnym.
 - Podpis UPO nie jest weryfikowany kryptograficznie; UPO z TEST nie przechodzi walidacji `upo-v4-3.xsd` (dwa znane odchylenia).
 - Platformy: testy live TypeScript wykonano na Windows z Node 24; inne systemy i Node 22 nie były uruchamiane live. TLS na Windows w PHP wymagał magazynu certyfikatów systemu (wbudowany klient go używa).
-- Laravel: lokalnie nie uruchamiano `--prefer-lowest`, PHP 8.2 i 8.3, Laravel starszego niż 11.57, Octane ani Horizon. Macierz CI obejmuje PHP 8.2-8.4, ale jej wyniki nie są tu potwierdzone. NestJS: tylko Nest 11.
+- Laravel: lokalnie nie uruchamiano `--prefer-lowest`, PHP 8.2 i 8.3, Octane ani Horizon. Macierz CI obejmuje PHP 8.2-8.4, ale jej wyniki nie są tu potwierdzone. NestJS: tylko Nest 11.
 - Przyjęcie faktury przez TEST nie gwarantuje przyjęcia na PRODUCTION (np. suma kontrolna NIP).
 - Kontrakt zweryfikowano względem KSeF API 2.9.0 (2026-11-13); późniejsze zmiany wychwytuje skrypt dryfu, lecz nie są automatycznie wdrażane.
 - Zgodność merytoryczna faktur (VAT, JPK, księgowość) leży po stronie wystawcy; SDK nie jest doradztwem podatkowym.

@@ -1,6 +1,6 @@
 # luroweb/laravel-ksef-foundry
 
-Integracja Laravel dla **KSeF Foundry** (klient KSeF API 2.0, `luroweb/ksef-foundry`). PHP >= 8.2, Laravel 11 / 12, MIT, LuroWeb.
+Integracja Laravel dla **KSeF Foundry** (klient KSeF API 2.0, `luroweb/ksef-foundry`). PHP >= 8.2, Laravel 12, MIT, LuroWeb.
 Status: **v0.1 (pre-release)**. Domyslne srodowisko to **TEST**; `production` tylko po jawnym ustawieniu.
 
 - Provider z auto-discovery, konfiguracja z `.env`, singleton `KsefClient` w kontenerze, `KsefManager` (polaczenia nazwane i tenanci z bazy), opcjonalna fasada `Ksef`.
@@ -126,5 +126,5 @@ composer check        # phpcs + phpstan (level max, larastan) + unit/feature/fau
 composer test:live    # opt-in, KSeF TEST only (KSEF_LIVE_TEST=1), synthetic taxpayer
 ```
 
-Supported Laravel versions are listed in `CHANGELOG.md` together with the versions the suite was actually run on.
+Supported: Laravel 12 only (Laravel 11 cannot be installed cleanly: Composer blocks every 11.x release because of security advisories, so it is not claimed). PHP >= 8.2 as required by Laravel 12.
 Not covered: KSeF DEMO/PRODUCTION (never touched by tests), Laravel Octane, Horizon specifics.

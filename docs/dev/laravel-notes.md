@@ -29,7 +29,7 @@ Package: `packages/laravel` (`luroweb/laravel-ksef-foundry`), example: `examples
 
 ## Test matrix actually run
 
-Laravel 12.72.0 (Testbench 10.12) and Laravel 11.57.1 (Testbench 9.18, resolved as `11.x-dev` branch head because testbench-core 9 requires `^11.x-dev`): 51 tests / 263 assertions green on both (unit+feature+fault). Not run: prefer-lowest, PHP 8.2/8.3. PHPStan max + phpcs run on the Laravel 12 install only.
+Laravel 12 only. Laravel 11 was dropped: Composer refuses every laravel/framework 11.x release in a clean install (security advisories), so testbench ^9 cannot be resolved and 11 cannot honestly be supported. Run locally: Laravel 12.72.0, Testbench 10.12, PHP 8.4.20 (60 tests, phpcs, PHPStan max). Not run locally: prefer-lowest, PHP 8.2/8.3 (CI).
 
 ## Findings
 

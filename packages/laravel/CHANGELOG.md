@@ -8,4 +8,4 @@
 - Jobs `SubmitInvoiceJob`, `PollInvoiceStatusJob`, `FetchInvoicesJob`, `InvoiceSink` contract, events `InvoiceAccepted` / `InvoiceRejected`.
 - `ksef:check` command, `KsefExceptionRenderer` (no upstream details by default, `ksef.exceptions.expose_details` to opt in).
 - Hardening: `#[\SensitiveParameter]` on connection arrays; per-invoice run lock + `$timeout` for `SubmitInvoiceJob`; own-duplicate (440) recognised and reported as accepted; `Retry-After` release cap (`ksef.jobs.max_release_delay`); `.gitattributes` export-ignore.
-- Tested (2026-11-13, PHP 8.4.20): Laravel 12.72.0 + Testbench 10.12 and Laravel 11.57.1 + Testbench 9.18 (51 tests each, PHPUnit 12.5.44). Not run: `--prefer-lowest`, PHP 8.2/8.3, Laravel < 11.57.
+- Supports Laravel 12 only (illuminate/* ^12.0, Testbench ^10). Tested locally on Laravel 12.72.0 / Testbench 10.12 / PHP 8.4.20; CI runs PHP 8.2-8.4. Not run: `--prefer-lowest`.

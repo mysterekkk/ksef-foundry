@@ -11,7 +11,7 @@ Jestem autorem. Opublikowałem wczesną wersję (v0.1.0) biblioteki do integracj
 **Co to jest**
 
 - `luroweb/ksef-foundry`: SDK PHP 8.2+ (PSR-17/18, `ext-openssl`, `ext-dom`, `ext-bcmath`)
-- `luroweb/laravel-ksef-foundry`: adapter dla Laravel 11 / 12 (service provider, fasada, cache tokenów, joby kolejki, komenda `php artisan ksef:check`)
+- `luroweb/laravel-ksef-foundry`: adapter dla Laravel 12 (service provider, fasada, cache tokenów, joby kolejki, komenda `php artisan ksef:check`)
 - ten sam projekt zawiera SDK TypeScript i adapter NestJS o identycznym zachowaniu, co jest przydatne, gdy firma ma backendy w obu technologiach
 
 **Co potrafi**

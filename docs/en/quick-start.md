@@ -150,7 +150,7 @@ npm run 04:errors       -w @luroweb/ksef-foundry-example-typescript
 
 ## Laravel
 
-Requirements: PHP >= 8.2, Laravel 11 or 12. The suite was run on Laravel 12.72.0 and 11.57.1 (PHP 8.4.20).
+Requirements: PHP >= 8.2, Laravel 12. The suite was run on Laravel 12.72.0 (PHP 8.4.20).
 
 **Install from a clone.** Add both `path` repositories to your app's `composer.json` (as in `examples/laravel/composer.json`) and require the adapter:
 

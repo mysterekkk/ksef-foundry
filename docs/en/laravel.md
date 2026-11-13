@@ -1,6 +1,6 @@
 # Laravel
 
-The `luroweb/laravel-ksef-foundry` adapter integrates the PHP core (`luroweb/ksef-foundry`) with Laravel 11 and 12: an auto-discovered provider, configuration from `.env`, a token cache, queue jobs and a diagnostic command. Version 0.1.0 (pre-release).
+The `luroweb/laravel-ksef-foundry` adapter integrates the PHP core (`luroweb/ksef-foundry`) with Laravel 12: an auto-discovered provider, configuration from `.env`, a token cache, queue jobs and a diagnostic command. Version 0.1.0 (pre-release).
 
 ## Contents
 
@@ -180,7 +180,7 @@ Routes: `GET /ksef/limits`, `GET /ksef/invoices?subject=Subject2&page=1&per_page
 
 ## Test scope
 
-Adapter tests: 51 tests / 263 assertions on Laravel 12.72.0 (Testbench 10.12) and Laravel 11.57.1 (Testbench 9.18), PHP 8.4.20, green (unit, feature, fault-injection). **Not run:** `--prefer-lowest`, PHP 8.2 and 8.3, Laravel older than 11.57, Octane, Horizon specifics. The live test (opt-in) creates a synthetic taxpayer on TEST. DEMO and PRODUCTION were never used. Details: [Testing](testing.md).
+Adapter tests: 60 tests / 343 assertions on Laravel 12.72.0 (Testbench 10.12), PHP 8.4.20, green (unit, feature, fault-injection). **Not run:** `--prefer-lowest`, PHP 8.2 and 8.3, Laravel older than 11.57, Octane, Horizon specifics. The live test (opt-in) creates a synthetic taxpayer on TEST. DEMO and PRODUCTION were never used. Details: [Testing](testing.md).
 
 ---
 

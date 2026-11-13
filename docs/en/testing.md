@@ -58,7 +58,7 @@ composer test           # unit + feature (Testbench) + fault
 composer check          # phpcs + phpstan (larastan) + tests
 ```
 
-The adapter suite was run on Laravel 12.72.0 and 11.57.1: 51 tests (263 assertions) each, green. The example app: `cd examples/laravel && vendor/bin/phpunit --testsuite default`.
+The adapter suite was run on Laravel 12.72.0: 51 tests (263 assertions) each, green. The example app: `cd examples/laravel && vendor/bin/phpunit --testsuite default`.
 
 **TypeScript (`packages/typescript`)**
 
@@ -110,7 +110,7 @@ The manual GitHub Actions workflow `Live TEST (manual)` (`workflow_dispatch`, no
 The default CI runs the unit, contract, fault-injection and framework layers (no live):
 
 - PHP 8.2, 8.3 and 8.4 (`composer check`),
-- Laravel 11 and 12 on PHP 8.2-8.4 in four combinations (`composer check`),
+- Laravel 12 on PHP 8.2-8.4 in three combinations (`composer check`),
 - Node 22 and 24: build, typecheck, lint, tests, `verify:pack` and the `02:build-validate` example,
 - an audit of production dependencies (`npm audit`, `composer audit`) and a check that tracked files contain no secrets.
 
@@ -127,7 +127,7 @@ Honestly, as of 2026-11-13:
 - In PHP there is no live test for the session list (`GET /sessions`, not implemented), and `/sessions/{ref}/invoices/failed` and UPO by KSeF number were checked only for shape against a local server.
 - The UPO signature is not cryptographically verified; the UPO from TEST does not validate against `upo-v4-3.xsd` (two known deviations).
 - Platforms: TypeScript live tests ran on Windows with Node 24; other systems and Node 22 were not run live. PHP TLS on Windows needed the system certificate store (the built-in client uses it).
-- Laravel: locally, `--prefer-lowest`, PHP 8.2 and 8.3, Laravel older than 11.57, Octane and Horizon were not run. The CI matrix covers PHP 8.2-8.4, but its results are not confirmed here. NestJS: Nest 11 only.
+- Laravel: locally, `--prefer-lowest`, PHP 8.2 and 8.3, Octane and Horizon were not run. The CI matrix covers PHP 8.2-8.4, but its results are not confirmed here. NestJS: Nest 11 only.
 - TEST accepting an invoice does not guarantee PRODUCTION will (for example the NIP checksum).
 - The contract was verified against KSeF API 2.9.0 (2026-11-13); later changes are caught by the drift script but are not rolled out automatically.
 - The substantive correctness of invoices (VAT, JPK, accounting) rests with the issuer; the SDK is not tax advice.

@@ -11,7 +11,7 @@ The packages are **prepared** for Packagist and npm but **have not been publishe
 | Package | Role |
 |---|---|
 | `luroweb/ksef-foundry` | PHP SDK (PHP 8.2+, PSR-17/18) |
-| `luroweb/laravel-ksef-foundry` | Laravel 11 / 12 adapter |
+| `luroweb/laravel-ksef-foundry` | Laravel 12 adapter |
 | `@luroweb/ksef-foundry` | TypeScript SDK (Node 22+, ESM) |
 | `@luroweb/nestjs-ksef-foundry` | NestJS 11 adapter |
 
