@@ -17,13 +17,13 @@ The `@luroweb/nestjs-ksef-foundry` package integrates the TypeScript SDK (`@luro
 
 ## Installation and requirements
 
-The package has not been published to npm yet (it is prepared for publication). After publication:
+The package is published on npmjs.com:
 
 ```bash
-npm i @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common @nestjs/core reflect-metadata rxjs
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
 ```
 
-Until then, build and pack both packages from a clone of the monorepo (`npm pack -w @luroweb/ksef-foundry`, `npm pack -w @luroweb/nestjs-ksef-foundry`) and install the tarballs ([Quick start](quick-start.md#nestjs)).
+Contributors can install the packages from a clone of the monorepo (an npm workspace; [Quick start](quick-start.md#nestjs)).
 
 Requirements: Node >= 22; peer dependencies: `@nestjs/common` and `@nestjs/core` `^11`, `rxjs ^7.1`, `reflect-metadata`, `@luroweb/ksef-foundry >=0.1.0 <1.0.0`. The package is **ESM only**, like the core SDK. Only NestJS 11 was run; Nest 10 was not verified (hence it is not declared), and Nest 12 (ESM only) was not tested.
 

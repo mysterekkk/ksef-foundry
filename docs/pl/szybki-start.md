@@ -13,7 +13,7 @@ Ten przewodnik prowadzi od instalacji do pierwszego wywołania KSeF dla PHP, Lar
 
 ## Zanim zaczniesz
 
-**Pakiety nie są jeszcze opublikowane** w Packagist ani npm (są przygotowane do publikacji). Poniżej instalacja z klona repozytorium. Gdy pakiety się pojawią, wystarczą polecenia `composer require luroweb/ksef-foundry` oraz `npm install @luroweb/ksef-foundry`; sprawdź [CHANGELOG](../../CHANGELOG.md) i stronę repozytorium.
+**Pakiety npm są opublikowane** (`@luroweb/ksef-foundry`, `@luroweb/nestjs-ksef-foundry`), więc dla TypeScript i NestJS wystarczy `npm install`. **Pakiety Composer nie są jeszcze w Packagist** (są przygotowane do publikacji), więc dla PHP i Laravela użyj instalacji z klona repozytorium (repozytorium VCS/path), opisanej poniżej. Gdy pakiety Composer się pojawią, wystarczy `composer require luroweb/ksef-foundry`; sprawdź [CHANGELOG](../../CHANGELOG.md) i stronę repozytorium.
 
 ```bash
 git clone https://github.com/mysterekkk/ksef-foundry.git
@@ -105,21 +105,19 @@ composer errors          # obsługa błędów (lokalny serwer demonstracyjny)
 
 Wymagania: Node >= 22, ESM. SDK korzysta z `fetch`; walidator XSD działa offline (libxml2 skompilowane do WebAssembly).
 
-**Instalacja z klona** (workspace npm w monorepo):
+**Instalacja we własnym projekcie** (z npmjs.com):
+
+```bash
+npm install @luroweb/ksef-foundry
+npm install -D @peculiar/x509 reflect-metadata   # opcjonalnie, tylko dla TestCertificateFactory (TEST)
+```
+
+**Instalacja z klona** (dla współtwórców; workspace npm w monorepo):
 
 ```bash
 cd ksef-foundry
 npm install
 npm run build -w @luroweb/ksef-foundry
-```
-
-**Instalacja we własnym projekcie** przez spakowany tarball (to samo robi `npm run verify:pack` w CI):
-
-```bash
-cd ksef-foundry && npm install && npm run build -w @luroweb/ksef-foundry
-npm pack -w @luroweb/ksef-foundry          # tworzy luroweb-ksef-foundry-0.1.0.tgz
-cd ../moj-projekt && npm install ../ksef-foundry/luroweb-ksef-foundry-0.1.0.tgz
-npm install -D @peculiar/x509 reflect-metadata   # tylko dla TestCertificateFactory (TEST)
 ```
 
 **Konfiguracja i pierwsze wywołanie:**
@@ -197,7 +195,13 @@ Gotowa aplikacja: `examples/laravel` (instrukcja w [Laravel](laravel.md)). Jej t
 
 Wymagania: Node >= 22, NestJS `^11` (Nest 10 nie był weryfikowany), pakiet jest ESM.
 
-**Instalacja z klona** (uruchomienie przykładowej aplikacji):
+**Instalacja we własnym projekcie** (z npmjs.com):
+
+```bash
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
+```
+
+**Instalacja z klona** (dla współtwórców; uruchomienie przykładowej aplikacji):
 
 ```bash
 cd ksef-foundry
@@ -207,8 +211,6 @@ npm run build -w @luroweb/nestjs-ksef-foundry
 cp examples/nestjs/.env.example examples/nestjs/.env   # uzupełnij wartości
 npm run start -w ksef-foundry-example-nestjs
 ```
-
-We własnym projekcie spakuj oba pakiety (`npm pack -w ...`) i zainstaluj tarballe razem z `@nestjs/common`, `@nestjs/core`, `reflect-metadata`, `rxjs`.
 
 **Konfiguracja i wstrzyknięcie:**
 

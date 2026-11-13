@@ -102,7 +102,7 @@ This policy has honest limits, and I try to say them out loud:
 
 ## Scope, honestly
 
-FA(3) support covers a standard VAT invoice in PLN. There are no correcting or advance invoices, foreign currency, split payment, attachments, batch sessions or offline modes. The packages are prepared for Packagist and npm but not published yet, so you install from the repository. Examples run on TEST with a synthetic taxpayer, with no secrets:
+FA(3) support covers a standard VAT invoice in PLN. There are no correcting or advance invoices, foreign currency, split payment, attachments, batch sessions or offline modes. The npm packages are published on npmjs.com (`npm install @luroweb/ksef-foundry`); the Composer packages are not yet on Packagist, so for PHP and Laravel you install from the repository. Examples run on TEST with a synthetic taxpayer, with no secrets:
 
 ```bash
 cd examples/php && composer install && composer send

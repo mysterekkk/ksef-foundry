@@ -4,7 +4,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/), wersjonowanie: [SemVer]
 
 ## [0.1.0] — 2026-11-13
 
-Pierwsze wydanie. Pakiety **przygotowane** do publikacji w Packagist/npm, ale **nieopublikowane**.
+Pierwsze wydanie. Pakiety npm (`@luroweb/ksef-foundry`, `@luroweb/nestjs-ksef-foundry`) są **opublikowane** w npmjs.com (2026-11-13). Pakiety Composer (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) są **przygotowane**, ale **jeszcze nie ma ich w Packagist**.
+
+First release. The npm packages (`@luroweb/ksef-foundry`, `@luroweb/nestjs-ksef-foundry`) are **published** on npmjs.com (2026-11-13). The Composer packages (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) are **prepared** but **not yet on Packagist**.
 
 ### Dodane
 - **PHP SDK** `luroweb/ksef-foundry` (PHP >= 8.2): uwierzytelnianie tokenem KSeF i certyfikatem (XAdES-BES, RSA/ECDSA), cache JWT z odświeżaniem i izolacją kontekstów, sesja interaktywna z szyfrowaniem AES-256-CBC + RSA-OAEP-SHA256, bezpieczna wysyłka (brak ślepych ponowień, rekoncyliacja po skrócie), pobieranie faktur, zapytania o metadane, UPO, limity, zarządzanie tokenami KSeF, hierarchia wyjątków, wbudowany klient curl (PSR-18).

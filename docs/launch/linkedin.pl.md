@@ -7,7 +7,7 @@ To nie jest pierwsza biblioteka do KSeF. Ministerstwo Finansów udostępnia ofic
 - offline'owa walidacja FA(3) względem oficjalnego XSD i dokładna arytmetyka dziesiętna w builderze
 - zasada testów bez mocków: kryptografia, XSD i API KSeF TEST są testowane naprawdę, a testy z wstrzykiwaniem błędów są wyraźnie tak oznaczone
 
-Uczciwy status: zweryfikowane na żywo tylko w środowisku TEST. DEMO i PRODUKCJI nigdy nie dotykałem, certyfikaty kwalifikowane i wydane przez KSeF są niezweryfikowane, a sesje wsadowe, tryby offline i faktury korygujące nie są zaimplementowane. Pakiety są przygotowane, ale jeszcze nie opublikowane w Packagist ani npm, więc na razie instalacja z repozytorium.
+Uczciwy status: zweryfikowane na żywo tylko w środowisku TEST. DEMO i PRODUKCJI nigdy nie dotykałem, certyfikaty kwalifikowane i wydane przez KSeF są niezweryfikowane, a sesje wsadowe, tryby offline i faktury korygujące nie są zaimplementowane. Pakiety npm są opublikowane w npmjs.com; pakiety Composer nie są jeszcze w Packagist, więc dla PHP i Laravela na razie instalacja z repozytorium.
 
 Repozytorium, zakres i ustalenia: https://github.com/mysterekkk/ksef-foundry
 Uwagi i zgłoszenia błędów mile widziane w issues.

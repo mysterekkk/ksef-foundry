@@ -31,7 +31,7 @@ Polish documentation (primary language): [docs/pl](../pl/index.md). Contributor 
 | `packages/typescript` | `@luroweb/ksef-foundry` | 0.1.0 | Node >= 22, ESM | TypeScript / Node core SDK |
 | `packages/nestjs` | `@luroweb/nestjs-ksef-foundry` | 0.1.0 | Node >= 22, NestJS `^11` | module, service, exception filter, health |
 
-**Publication:** the packages are prepared for publication but **have not been published yet** to Packagist or npm. `composer require` / `npm install` from a registry will only work after publication. Until then, install from a clone of the repository (see the [Quick start](quick-start.md)).
+**Publication:** the npm packages `@luroweb/ksef-foundry` and `@luroweb/nestjs-ksef-foundry` are **published** on npmjs.com (`npm install @luroweb/ksef-foundry`). The Composer packages (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) are prepared but **not yet on Packagist**, so `composer require` from a registry does not work yet. For PHP and Laravel, install from a clone of the repository (VCS/path repository; see the [Quick start](quick-start.md)).
 
 ## Feature status
 

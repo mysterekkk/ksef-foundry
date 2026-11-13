@@ -17,13 +17,13 @@ Pakiet `@luroweb/nestjs-ksef-foundry` integruje SDK TypeScript (`@luroweb/ksef-f
 
 ## Instalacja i wymagania
 
-Pakiet nie jest jeszcze opublikowany w npm (jest przygotowany do publikacji). Po publikacji:
+Pakiet jest opublikowany w npmjs.com:
 
 ```bash
-npm i @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common @nestjs/core reflect-metadata rxjs
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
 ```
 
-Do tego czasu zbuduj i spakuj oba pakiety z klona monorepo (`npm pack -w @luroweb/ksef-foundry`, `npm pack -w @luroweb/nestjs-ksef-foundry`) i zainstaluj tarballe ([Szybki start](szybki-start.md#nestjs)).
+Współtwórcy mogą zainstalować pakiety z klona monorepo (workspace npm; [Szybki start](szybki-start.md#nestjs)).
 
 Wymagania: Node >= 22; peer dependencies: `@nestjs/common` i `@nestjs/core` `^11`, `rxjs ^7.1`, `reflect-metadata`, `@luroweb/ksef-foundry >=0.1.0 <1.0.0`. Pakiet jest **tylko ESM**, jak rdzeń SDK. Uruchomiono wyłącznie NestJS 11; Nest 10 nie był weryfikowany (dlatego nie jest deklarowany), a Nest 12 (tylko ESM) nie był testowany.
 

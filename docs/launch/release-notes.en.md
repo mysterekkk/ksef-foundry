@@ -6,16 +6,21 @@ This is an independent project, not affiliated with the Polish Ministry of Finan
 
 ## Install status: read this first
 
-The packages are **prepared** for Packagist and npm but **have not been published yet**. `composer require` and `npm install` from the public registries will not work for now.
+The two npm packages are **published** on npmjs.com. The two Composer packages are **prepared** but **not yet on Packagist**, so `composer require` does not work for now.
 
-| Package | Role |
-|---|---|
-| `luroweb/ksef-foundry` | PHP SDK (PHP 8.2+, PSR-17/18) |
-| `luroweb/laravel-ksef-foundry` | Laravel 12 adapter |
-| `@luroweb/ksef-foundry` | TypeScript SDK (Node 22+, ESM) |
-| `@luroweb/nestjs-ksef-foundry` | NestJS 11 adapter |
+| Package | Role | Install status |
+|---|---|---|
+| `luroweb/ksef-foundry` | PHP SDK (PHP 8.2+, PSR-17/18) | not yet on Packagist |
+| `luroweb/laravel-ksef-foundry` | Laravel 12 adapter | not yet on Packagist |
+| `@luroweb/ksef-foundry` | TypeScript SDK (Node 22+, ESM) | on npm |
+| `@luroweb/nestjs-ksef-foundry` | NestJS 11 adapter | on npm |
 
-For now, install from a clone: a Composer `path` repository for PHP, an npm workspace or `npm pack` tarball for TypeScript. Steps are in [docs/en/quick-start.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/en/quick-start.md).
+```bash
+npm install @luroweb/ksef-foundry
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
+```
+
+For PHP and Laravel, install from a clone for now (a Composer `path` or VCS repository). Steps are in [docs/en/quick-start.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/en/quick-start.md).
 
 ## What is in v0.1.0
 

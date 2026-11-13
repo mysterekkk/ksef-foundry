@@ -14,7 +14,7 @@ This guide takes you from installation to your first KSeF call in PHP, Laravel, 
 
 ## Before you begin
 
-**The packages are not published yet** to Packagist or npm (they are prepared for publication). The instructions below install from a clone of the repository. Once the packages appear, `composer require luroweb/ksef-foundry` and `npm install @luroweb/ksef-foundry` will be enough; check the [CHANGELOG](../../CHANGELOG.md) and the repository page.
+**The npm packages are published** (`@luroweb/ksef-foundry`, `@luroweb/nestjs-ksef-foundry`), so for TypeScript and NestJS `npm install` is enough. **The Composer packages are not yet on Packagist** (they are prepared for publication), so for PHP and Laravel use the install from a clone of the repository (VCS/path repository) described below. Once the Composer packages appear, `composer require luroweb/ksef-foundry` will be enough; check the [CHANGELOG](../../CHANGELOG.md) and the repository page.
 
 ```bash
 git clone https://github.com/mysterekkk/ksef-foundry.git
@@ -106,21 +106,19 @@ composer errors          # error handling (local demo server)
 
 Requirements: Node >= 22, ESM. The SDK uses `fetch`; XSD validation runs offline (libxml2 compiled to WebAssembly).
 
-**Install from a clone** (an npm workspace in the monorepo):
+**Install in your own project** (from npmjs.com):
+
+```bash
+npm install @luroweb/ksef-foundry
+npm install -D @peculiar/x509 reflect-metadata   # optional, only for TestCertificateFactory (TEST)
+```
+
+**Install from a clone** (for contributors; an npm workspace in the monorepo):
 
 ```bash
 cd ksef-foundry
 npm install
 npm run build -w @luroweb/ksef-foundry
-```
-
-**Install in your own project** through a packed tarball (this is what `npm run verify:pack` does in CI):
-
-```bash
-cd ksef-foundry && npm install && npm run build -w @luroweb/ksef-foundry
-npm pack -w @luroweb/ksef-foundry          # creates luroweb-ksef-foundry-0.1.0.tgz
-cd ../my-project && npm install ../ksef-foundry/luroweb-ksef-foundry-0.1.0.tgz
-npm install -D @peculiar/x509 reflect-metadata   # only for TestCertificateFactory (TEST)
 ```
 
 **Configuration and first call:**
@@ -198,7 +196,13 @@ A ready-made app lives in `examples/laravel` (instructions in [Laravel](laravel.
 
 Requirements: Node >= 22, NestJS `^11` (Nest 10 was not verified); the package is ESM.
 
-**Install from a clone** (run the example app):
+**Install in your own project** (from npmjs.com):
+
+```bash
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
+```
+
+**Install from a clone** (for contributors; run the example app):
 
 ```bash
 cd ksef-foundry
@@ -208,8 +212,6 @@ npm run build -w @luroweb/nestjs-ksef-foundry
 cp examples/nestjs/.env.example examples/nestjs/.env   # fill in the values
 npm run start -w ksef-foundry-example-nestjs
 ```
-
-In your own project, pack both packages (`npm pack -w ...`) and install the tarballs together with `@nestjs/common`, `@nestjs/core`, `reflect-metadata` and `rxjs`.
 
 **Configuration and injection:**
 

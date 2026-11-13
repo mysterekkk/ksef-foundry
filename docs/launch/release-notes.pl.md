@@ -6,16 +6,21 @@ To niezależny projekt, niezwiązany z Ministerstwem Finansów. Istnieją inne b
 
 ## Instalacja: przeczytaj najpierw
 
-Pakiety są **przygotowane** do Packagist i npm, ale **nie zostały jeszcze opublikowane**. `composer require` i `npm install` z publicznych rejestrów na razie nie zadziałają.
+Dwa pakiety npm są **opublikowane** w npmjs.com. Dwa pakiety Composer są **przygotowane**, ale **nie ma ich jeszcze w Packagist**, więc `composer require` na razie nie zadziała.
 
-| Pakiet | Rola |
-|---|---|
-| `luroweb/ksef-foundry` | SDK PHP (PHP 8.2+, PSR-17/18) |
-| `luroweb/laravel-ksef-foundry` | adapter Laravel 12 |
-| `@luroweb/ksef-foundry` | SDK TypeScript (Node 22+, ESM) |
-| `@luroweb/nestjs-ksef-foundry` | adapter NestJS 11 |
+| Pakiet | Rola | Status instalacji |
+|---|---|---|
+| `luroweb/ksef-foundry` | SDK PHP (PHP 8.2+, PSR-17/18) | jeszcze nie w Packagist |
+| `luroweb/laravel-ksef-foundry` | adapter Laravel 12 | jeszcze nie w Packagist |
+| `@luroweb/ksef-foundry` | SDK TypeScript (Node 22+, ESM) | w npm |
+| `@luroweb/nestjs-ksef-foundry` | adapter NestJS 11 | w npm |
 
-Na razie instalacja z klonu repozytorium: repozytorium typu `path` w Composerze dla PHP, workspace npm lub paczka z `npm pack` dla TypeScript. Kroki: [docs/pl/](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/pl/index.md) oraz [docs/en/quick-start.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/en/quick-start.md).
+```bash
+npm install @luroweb/ksef-foundry
+npm install @luroweb/nestjs-ksef-foundry @luroweb/ksef-foundry @nestjs/common@^11 @nestjs/core@^11 reflect-metadata rxjs
+```
+
+Dla PHP i Laravela na razie instalacja z klonu repozytorium (repozytorium `path` lub VCS w Composerze). Kroki: [docs/pl/](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/pl/index.md) oraz [docs/en/quick-start.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/en/quick-start.md).
 
 ## Co zawiera v0.1.0
 

@@ -10,6 +10,6 @@ I am the author. KSeF is Poland's national e-invoice system. I built PHP (with a
 
 Not the first KSeF library (official C#/Java clients and other community clients exist). Differences: HTTP 202 is not treated as acceptance, ambiguous outcomes are reconciled by invoice hash instead of resent, and FA(3) invoices are validated offline against the official XSD.
 
-Status: verified live on the TEST environment only. DEMO/PRODUCTION never touched; qualified certificates unverified; no batch sessions or correcting invoices. Packages are not yet on Packagist/npm; install from the repo.
+Status: verified live on the TEST environment only. DEMO/PRODUCTION never touched; qualified certificates unverified; no batch sessions or correcting invoices. npm packages are published (npm install @luroweb/ksef-foundry); Composer packages are not yet on Packagist, so install PHP/Laravel from the repo.
 
 https://github.com/mysterekkk/ksef-foundry (feedback via issues)

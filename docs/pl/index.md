@@ -31,7 +31,7 @@ Dokumentacja w języku angielskim: [docs/en](../en/index.md). Notatki projektowe
 | `packages/typescript` | `@luroweb/ksef-foundry` | 0.1.0 | Node >= 22, ESM | rdzeń SDK dla TypeScript / Node |
 | `packages/nestjs` | `@luroweb/nestjs-ksef-foundry` | 0.1.0 | Node >= 22, NestJS `^11` | moduł, serwis, filtr wyjątków, health |
 
-**Publikacja:** pakiety są przygotowane do publikacji, ale **nie zostały jeszcze opublikowane** w Packagist ani npm. Polecenia `composer require` / `npm install` z rejestru zadziałają dopiero po publikacji. Do tego czasu użyj instalacji z klona repozytorium (opis w [Szybkim starcie](szybki-start.md)).
+**Publikacja:** pakiety npm `@luroweb/ksef-foundry` i `@luroweb/nestjs-ksef-foundry` są **opublikowane** w npmjs.com (`npm install @luroweb/ksef-foundry`). Pakiety Composer (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) są przygotowane, ale **nie ma ich jeszcze w Packagist**, więc `composer require` z rejestru jeszcze nie zadziała. Dla PHP i Laravela użyj instalacji z klona repozytorium (repozytorium VCS/path; opis w [Szybkim starcie](szybki-start.md)).
 
 ## Status funkcji
 

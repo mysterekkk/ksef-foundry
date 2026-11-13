@@ -42,3 +42,12 @@ Zakres live (wszystkie pakiety łącznie): klucze publiczne (weryfikacja `public
 - **CI** na commicie `35487bf`: wszystkie 10 zadań zielone — PHP 8.2 / 8.3 / 8.4 (SDK), Laravel 12 na PHP 8.2 / 8.3 / 8.4, Node 22 / 24 (TypeScript + NestJS, `verify:pack`, przykład FA(3) offline), spójność repozytorium, audyt zależności i skan sekretów.
 - **Ręczny workflow „Live TEST”** na runnerze GitHub (Linux, PHP 8.4, Node 24): TypeScript, NestJS, PHP (11 testów, 40 asercji) i Laravel (1 test, 15 asercji) — zielone, w logach brak wpisów `SKIPPED`.
 - Pierwszy przebieg CI (commit `edf6429`) wykrył 3 realne problemy, naprawione przed wydaniem: kolejność budowania pakietów Node, brak `private_key_bits` dla kluczy EC w PHP < 8.4 oraz niemożność instalacji Laravel 11 (Composer blokuje wszystkie wydania 11.x z powodu poradników bezpieczeństwa — wsparcie zawężono do Laravel 12).
+
+## Publikacja npm (2026-11-13)
+
+- Oba pakiety w wersji 0.1.0 zostały opublikowane w npmjs.com (publicznie, MIT, konto `luroweb`): `@luroweb/ksef-foundry` i `@luroweb/nestjs-ksef-foundry`.
+- Sumy kontrolne tarballi w rejestrze są równe lokalnie przygotowanym: `@luroweb/ksef-foundry` shasum `141ff566f8ce4968ef46a3f7c73839008d0c4a83` (150 plików), `@luroweb/nestjs-ksef-foundry` shasum `28e43c04847d3f3b1176dd3b980595ce79e67064` (48 plików).
+- Testy smoke po czystej instalacji z rejestru zakończyły się powodzeniem: zbudowanie faktury FA(3) z walidacją XSD offline oraz uruchomienie aplikacji NestJS z `KsefModule.forRoot` przez DI.
+- Pakiety Composer (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) nie zostały opublikowane w Packagist.
+
+*EN:* both npm packages (0.1.0) are published; registry checksums equal the local ones (see above); clean-install smoke tests (FA(3) build with offline XSD validation, NestJS app booted via `KsefModule.forRoot`) passed; the Composer packages are not published on Packagist.

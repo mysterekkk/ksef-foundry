@@ -8,6 +8,8 @@ Open-source SDKs for Poland's National e-Invoice System (KSeF 2.0) for **PHP / L
 
 [![CI](https://github.com/mysterekkk/ksef-foundry/actions/workflows/ci.yml/badge.svg)](https://github.com/mysterekkk/ksef-foundry/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![npm: @luroweb/ksef-foundry](https://img.shields.io/npm/v/@luroweb/ksef-foundry?label=npm%20%40luroweb%2Fksef-foundry)](https://www.npmjs.com/package/@luroweb/ksef-foundry)
+[![npm: @luroweb/nestjs-ksef-foundry](https://img.shields.io/npm/v/@luroweb/nestjs-ksef-foundry?label=npm%20%40luroweb%2Fnestjs-ksef-foundry)](https://www.npmjs.com/package/@luroweb/nestjs-ksef-foundry)
 ![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777bb4)
 ![Node 22+](https://img.shields.io/badge/Node-22%2B-339933)
 ![TypeScript strict](https://img.shields.io/badge/TypeScript-strict-3178c6)
@@ -17,7 +19,7 @@ Open-source SDKs for Poland's National e-Invoice System (KSeF 2.0) for **PHP / L
 
 </div>
 
-> **Status: v0.1 (early release).** Scope and limitations are stated honestly below. The packages are **prepared** for Packagist and npm but **have not been published yet**.
+> **Status: v0.1 (early release).** Scope and limitations are stated honestly below. The npm packages (`@luroweb/ksef-foundry`, `@luroweb/nestjs-ksef-foundry`) are **published** on npmjs.com. The Composer packages (`luroweb/ksef-foundry`, `luroweb/laravel-ksef-foundry`) are **prepared** but **not yet on Packagist**.
 > This is an independent open-source project, not affiliated with the Polish Ministry of Finance.
 
 ## Why KSeF Foundry?
@@ -35,10 +37,10 @@ Other libraries exist (including the Ministry's official C#/Java clients and ind
 
 | Package | Role | Requirements |
 |---|---|---|
-| [`luroweb/ksef-foundry`](packages/php) | PHP SDK (PSR-17/18) | PHP ≥ 8.2, `ext-openssl`, `ext-dom`, `ext-bcmath` |
-| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Laravel adapter | Laravel 12 |
-| [`@luroweb/ksef-foundry`](packages/typescript) | TypeScript SDK (ESM, `.d.ts`) | Node ≥ 22 |
-| [`@luroweb/nestjs-ksef-foundry`](packages/nestjs) | NestJS adapter | NestJS 11 |
+| [`luroweb/ksef-foundry`](packages/php) | PHP SDK (PSR-17/18); not yet on Packagist | PHP ≥ 8.2, `ext-openssl`, `ext-dom`, `ext-bcmath` |
+| [`luroweb/laravel-ksef-foundry`](packages/laravel) | Laravel adapter; not yet on Packagist | Laravel 12 |
+| [`@luroweb/ksef-foundry`](packages/typescript) | TypeScript SDK (ESM, `.d.ts`); [available on npm](https://www.npmjs.com/package/@luroweb/ksef-foundry) | Node ≥ 22 |
+| [`@luroweb/nestjs-ksef-foundry`](packages/nestjs) | NestJS adapter; [available on npm](https://www.npmjs.com/package/@luroweb/nestjs-ksef-foundry) | NestJS 11 |
 
 ## Quick Start
 
@@ -95,7 +97,7 @@ Details: [`docs/en/laravel.md`](docs/en/laravel.md), example app: [`examples/lar
 <summary><b>TypeScript</b></summary>
 
 ```bash
-npm install @luroweb/ksef-foundry   # once published on npm; until then npm pack from the repository (see docs)
+npm install @luroweb/ksef-foundry
 ```
 
 ```ts
