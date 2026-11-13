@@ -1,0 +1,95 @@
+{
+    "name": "luroweb/laravel-ksef-foundry",
+    "description": "Laravel integration for KSeF Foundry: service provider, config, multi-tenant clients, cache token storage, queue jobs and Artisan commands for Poland's KSeF API 2.0.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["ksef", "laravel", "e-invoice", "faktura", "fa3", "poland"],
+    "homepage": "https://github.com/mysterekkk/ksef-foundry",
+    "authors": [
+        {
+            "name": "LuroWeb"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.8",
+        "illuminate/bus": "^11.0||^12.0",
+        "illuminate/cache": "^11.0||^12.0",
+        "illuminate/console": "^11.0||^12.0",
+        "illuminate/contracts": "^11.0||^12.0",
+        "illuminate/http": "^11.0||^12.0",
+        "illuminate/queue": "^11.0||^12.0",
+        "illuminate/support": "^11.0||^12.0",
+        "luroweb/ksef-foundry": "^0.1"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^9.0||^10.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^10.5||^11.5||^12.0",
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../php",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "luroweb/ksef-foundry": "0.1.x-dev"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "LuroWeb\\KsefFoundry\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LuroWeb\\KsefFoundry\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LuroWeb\\KsefFoundry\\Laravel\\KsefServiceProvider"
+            ],
+            "aliases": {
+                "Ksef": "LuroWeb\\KsefFoundry\\Laravel\\Facades\\Ksef"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testsuite unit,feature,fault",
+        "test:live": [
+            "@putenv KSEF_LIVE_TEST=1",
+            "phpunit --testsuite live"
+        ],
+        "stan": "phpstan analyse --memory-limit=1G",
+        "cs": "phpcs",
+        "cs:fix": "phpcbf",
+        "check": [
+            "@cs",
+            "@stan",
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Unit + feature (Testbench) + fault-injection tests (no network to KSeF).",
+        "test:live": "LIVE TEST against api-test.ksef.mf.gov.pl (opt-in, KSEF_LIVE_TEST=1).",
+        "check": "cs + stan + tests (without live)."
+    }
+}
