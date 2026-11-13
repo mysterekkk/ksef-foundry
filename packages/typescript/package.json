@@ -39,7 +39,7 @@
     "test:invoice": "vitest run --project invoice"
   },
   "dependencies": {
-    "@xmldom/xmldom": "^0.8.15",
+    "@xmldom/xmldom": "^0.9.12",
     "xml-crypto": "^6.4.0",
     "xmllint-wasm": "^5.3.0"
   },
