@@ -1,13 +1,13 @@
 # Raport testów / Test report — v0.1.0 (2026-11-13)
 
 Wyniki uruchomione lokalnie (Windows 11, PHP 8.4.20, Node 24.13, Composer 2.9.7) tuż przed wydaniem. Liczby pochodzą z faktycznych uruchomień, nie z deklaracji.
-**Ograniczenie:** CI na macierzy (PHP 8.2/8.3, Node 22, Linux) jest sprawdzane osobno po wypchnięciu — zob. status w README/Actions. Lokalnie nie testowano PHP 8.2/8.3, Node 22 ani Linuksa.
+**Ograniczenie:** CI na macierzy (PHP 8.2/8.3, Node 22, Linux) jest sprawdzane osobno po wypchnięciu — zob. status w README/Actions. PHP 8.2/8.3 sprawdzono lokalnie w Dockerze (Linux); Node 22 lokalnie nie był testowany (CI).
 
 ## Testy bez dostępu do sieci KSeF (domyślne w CI)
 
 | Pakiet | Wynik | Warstwy |
 |---|---|---|
-| PHP `luroweb/ksef-foundry` | **273 testy, 4978 asercji** — OK | unit 62 · contract 35 · fault-injection 66 · invoice (FA(3), XSD) 110; PHPStan level max (src) + 6 (testy), PSR-12 bez błędów |
+| PHP `luroweb/ksef-foundry` | **277 testów, 4990 asercji** — OK (lokalnie Windows/PHP 8.4); ten sam zestaw OK także na Linuksie w Dockerze: PHP 8.2.35 i 8.3.36 (277 testów, 4991 asercji) | unit + contract + fault-injection + invoice (FA(3), XSD); PHPStan level max (src) + 6 (testy), PSR-12 bez błędów |
 | Laravel `luroweb/laravel-ksef-foundry` | **60 testów, 343 asercje** — OK (Laravel 12 / Testbench 10); Laravel 11 nie jest wspierany (Composer blokuje wszystkie wydania 11.x z powodu poradników bezpieczeństwa) | integracja frameworkowa (kontener, cache, kolejka bazodanowa, zdarzenia) + fault-injection; PHPStan max (larastan) |
 | Przykład Laravel | **8 testów, 32 asercje** — OK | przez prawdziwy kernel HTTP |
 | TypeScript `@luroweb/ksef-foundry` | **306 testów w 14 plikach** — OK | unit · contract · fault-injection · invoice (FA(3)); typecheck strict, ESLint, build, `verify:pack` (tarball, ESM import, `require(esm)`, publint, attw) |

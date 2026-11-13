@@ -14,6 +14,7 @@ use LuroWeb\KsefFoundry\Exception\XmlValidationException;
 use LuroWeb\KsefFoundry\Support\SensitiveString;
 use LuroWeb\KsefFoundry\Support\X509;
 use LuroWeb\KsefFoundry\Testing\SyntheticIdentity;
+use LuroWeb\KsefFoundry\Testing\OpenSslConfig;
 use LuroWeb\KsefFoundry\Testing\TestCertificateFactory;
 use LuroWeb\KsefFoundry\Tests\Support\XadesVerifier;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -203,22 +204,22 @@ final class XadesSignerTest extends TestCase
 
     public function testExpiredCertificateIsRefused(): void
     {
-        $conf = tempnam(sys_get_temp_dir(), 'c');
-        self::assertNotFalse($conf);
-        file_put_contents($conf, "[req]\ndistinguished_name = dn\nprompt = no\n[dn]\n");
-        $o = ['config' => $conf, 'private_key_bits' => 2048, 'private_key_type' => OPENSSL_KEYTYPE_RSA];
-        $k = openssl_pkey_new($o);
-        self::assertNotFalse($k);
-        $kk = $k;
-        $csr = openssl_csr_new(['commonName' => 'x'], $kk, $o);
-        self::assertInstanceOf(\OpenSSLCertificateSigningRequest::class, $csr);
-        $cert = openssl_csr_sign($csr, null, $k, 0, $o);
-        self::assertNotFalse($cert);
-        $certPem = null;
-        $keyPem = null;
-        openssl_x509_export($cert, $certPem);
-        openssl_pkey_export($k, $keyPem, null, ['config' => $conf]);
-        unlink($conf);
+        [$certPem, $keyPem] = OpenSslConfig::run(static function (string $conf): array {
+            $o = OpenSslConfig::options($conf);
+            $k = openssl_pkey_new($o);
+            self::assertNotFalse($k);
+            $kk = $k;
+            $csr = openssl_csr_new(['commonName' => 'x'], $kk, $o);
+            self::assertInstanceOf(\OpenSSLCertificateSigningRequest::class, $csr);
+            $cert = openssl_csr_sign($csr, null, $k, 0, $o);
+            self::assertNotFalse($cert);
+            $certPem = null;
+            $keyPem = null;
+            openssl_x509_export($cert, $certPem);
+            openssl_pkey_export($k, $keyPem, null, ['config' => $conf]);
+
+            return [$certPem, $keyPem];
+        });
         sleep(2); // days=0: valid for zero seconds, so it is expired by now
         $this->expectException(CertificateException::class);
         new CertificateCredentials((string) $certPem, new SensitiveString((string) $keyPem), ContextIdentifier::nip('7980332920'));

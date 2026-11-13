@@ -18,6 +18,7 @@ use LuroWeb\KsefFoundry\Invoice\XmlValidator;
 use LuroWeb\KsefFoundry\Support\PageGuard;
 use LuroWeb\KsefFoundry\Support\SensitiveString;
 use LuroWeb\KsefFoundry\Support\X509;
+use LuroWeb\KsefFoundry\Testing\OpenSslConfig;
 use LuroWeb\KsefFoundry\Testing\SyntheticIdentity;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
@@ -41,18 +42,14 @@ final class SecurityHardeningTest extends TestCase
 
     private function encryptedKey(string $pem, string $passphrase): string
     {
-        $conf = tempnam(sys_get_temp_dir(), 'c');
-        self::assertNotFalse($conf);
-        file_put_contents($conf, "[req]
-distinguished_name = dn
-prompt = no
-[dn]
-");
         $key = openssl_pkey_get_private($pem);
         self::assertNotFalse($key);
-        $out = null;
-        openssl_pkey_export($key, $out, $passphrase, ['config' => $conf]);
-        unlink($conf);
+        $out = OpenSslConfig::run(static function (string $conf) use ($key, $passphrase): mixed {
+            $out = null;
+            openssl_pkey_export($key, $out, $passphrase, ['config' => $conf]);
+
+            return $out;
+        });
         self::assertIsString($out);
 
         return $out;

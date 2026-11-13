@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace LuroWeb\KsefFoundry\Tests\Support;
 
 use LuroWeb\KsefFoundry\Support\X509;
+use LuroWeb\KsefFoundry\Testing\OpenSslConfig;
 
 /**
  * Generates a real RSA key pair and a self-signed certificate that stand in for the Ministry of Finance key
@@ -19,13 +20,8 @@ final class KsefLikeKeys
 
     public function __construct(int $bits = 2048)
     {
-        $conf = tempnam(sys_get_temp_dir(), 'ksefkey');
-        if ($conf === false) {
-            throw new \RuntimeException('tempnam failed');
-        }
-        file_put_contents($conf, "[req]\ndistinguished_name = dn\nprompt = no\n[dn]\n");
-        try {
-            $opts = ['config' => $conf, 'private_key_bits' => $bits, 'private_key_type' => OPENSSL_KEYTYPE_RSA, 'digest_alg' => 'sha256'];
+        $out = OpenSslConfig::run(static function (string $conf) use ($bits): array {
+            $opts = ['private_key_bits' => $bits] + OpenSslConfig::options($conf);
             $key = openssl_pkey_new($opts);
             if ($key === false) {
                 throw new \RuntimeException('key generation failed');
@@ -43,14 +39,13 @@ final class KsefLikeKeys
             if (!openssl_pkey_export($key, $pem, null, ['config' => $conf]) || !is_string($pem)) {
                 throw new \RuntimeException('export failed');
             }
-            $this->privateKeyPem = $pem;
-            $der = X509::der($cert);
-            $this->certificateDerBase64 = base64_encode($der);
-            $this->certificateId = base64_encode(hash('sha256', $der, true));
-            $this->publicKeyId = base64_encode(hash('sha256', X509::publicKey($cert)['der'], true));
-        } finally {
-            unlink($conf);
-        }
+
+            return [$pem, X509::der($cert), X509::publicKey($cert)['der']];
+        });
+        [$this->privateKeyPem, $der, $spki] = $out;
+        $this->certificateDerBase64 = base64_encode($der);
+        $this->certificateId = base64_encode(hash('sha256', $der, true));
+        $this->publicKeyId = base64_encode(hash('sha256', $spki, true));
     }
 
     /**
