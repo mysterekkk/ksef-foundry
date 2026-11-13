@@ -35,12 +35,12 @@ Na razie instalacja z klonu repozytorium: repozytorium typu `path` w Composerze 
 - **Zweryfikowane na żywo w KSeF TEST** (`api-test.ksef.mf.gov.pl`, kontrakt 2.9.0, sprawdzony 2026-11-13): uwierzytelnianie (token oraz certyfikat samopodpisany, RSA i ECDSA), zarządzanie tokenami, otwarcie i zamknięcie sesji, zaszyfrowana wysyłka FA(3) do statusu 200, pobranie faktury ze zgodnym skrótem, UPO, wykrycie duplikatu (440), zapytania o metadane, limity, sesje.
 - **Sprawdzone tylko na prawdziwym lokalnym serwerze HTTP z wstrzykiwaniem błędów** (to nie jest dowód zgodności z KSeF): 429 z `Retry-After`, 5xx, timeouty, zerwane połączenia, ponawianie pobrania faktury, gdy jest niedostępna dłużej niż 15 s, oraz kształt kilku odpowiedzi (np. faktury odrzucone, UPO po numerze KSeF w PHP).
 - **Nigdy nie używane:** DEMO i PRODUKCJA. Żaden test ani przykład ich nie dotyka.
-- **Niezweryfikowane:** certyfikaty kwalifikowane, certyfikaty uwierzytelniające wydane przez KSeF, `certificateFingerprint`, inne typy kontekstu, platformy inne niż Windows z Node 24.
+- **Niezweryfikowane:** certyfikaty kwalifikowane, certyfikaty uwierzytelniające wydane przez KSeF, `certificateFingerprint`, inne typy kontekstu, macOS (CI i testy live uruchomiono na Windows oraz Linuksie).
 - Podpis UPO nie jest weryfikowany kryptograficznie. UPO zwracane przez TEST nie przechodzi też walidacji `upo-v4-3.xsd` z dwóch znanych powodów opisanych w `docs/dev/findings-live-test.md`.
 
 Zasada projektu: bez mocków tam, gdzie logikę da się uruchomić naprawdę. Kryptografia, XSD i API KSeF TEST są testowane naprawdę. Testy live są opcjonalne (`KSEF_LIVE_TEST=1`), działają wyłącznie na TEST, a przebieg, który się nie odbył, jest raportowany jako `SKIPPED`, nigdy jako sukces.
 
-Wyniki testów dla tego wydania: link do raportu (`docs/dev/test-report.md`) dodaje opiekun projektu w opisie wydania.
+Wyniki testów dla tego wydania: [docs/dev/test-report.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/dev/test-report.md). CI (PHP 8.2/8.3/8.4, Node 22/24, Laravel 12) jest zielone, a ręczny workflow live na runnerze GitHub (Linux) przeszedł dla wszystkich czterech pakietów.
 
 ## Czego NIE ma
 

@@ -35,12 +35,12 @@ For now, install from a clone: a Composer `path` repository for PHP, an npm work
 - **Verified live on KSeF TEST** (`api-test.ksef.mf.gov.pl`, contract 2.9.0, checked 2026-11-13): authentication (token, and self-signed certificate with RSA and ECDSA), token management, session open/close, encrypted FA(3) send up to status 200, invoice download with hash match, UPO, duplicate detection (440), metadata queries, limits, sessions.
 - **Verified only against a real local HTTP server with fault injection** (not proof of KSeF compatibility): 429 with `Retry-After`, 5xx, timeouts, connection resets, the download retry when an invoice is not yet available beyond 15 seconds, and several response shapes (for example failed invoices, KSeF-number UPO in PHP).
 - **Never touched:** DEMO and PRODUCTION. No test or example uses them.
-- **Unverified:** qualified certificates, KSeF Authentication certificates issued by KSeF, `certificateFingerprint`, other context types, platforms other than Windows with Node 24.
+- **Unverified:** qualified certificates, KSeF Authentication certificates issued by KSeF, `certificateFingerprint`, other context types, macOS (CI and live runs were done on Windows and Linux).
 - UPO signatures are not cryptographically verified. The UPO returned by TEST also does not pass `upo-v4-3.xsd` for two known reasons, documented in `docs/dev/findings-live-test.md`.
 
 Project rule: no mocks for logic that can run for real. Cryptography, XSD and the KSeF TEST API are tested for real. Live tests are opt-in (`KSEF_LIVE_TEST=1`), run against TEST only, and a run that did not happen is reported as `SKIPPED`, never as a pass.
 
-Test results for this release: see the test report linked by the maintainer in the release description (`docs/dev/test-report.md`).
+Test results for this release: [docs/dev/test-report.md](https://github.com/mysterekkk/ksef-foundry/blob/main/docs/dev/test-report.md). CI (PHP 8.2/8.3/8.4, Node 22/24, Laravel 12) is green, and the manual live workflow on a GitHub runner (Linux) passed for all four packages.
 
 ## What is NOT implemented
 

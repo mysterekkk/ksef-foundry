@@ -36,3 +36,9 @@ Zakres live (wszystkie pakiety łącznie): klucze publiczne (weryfikacja `public
 - Podpis XAdES na UPO nie jest weryfikowany kryptograficznie (UPO jest walidowane XSD z dwoma znanymi odchyleniami TEST — zob. `findings-live-test.md` pkt 10).
 - Brak testów obciążeniowych; Redis/baza jako store cache w Laravelu nie były uruchamiane (tylko array i file); Nest 10 i Octane/Horizon nie testowane.
 - „Bez mocków": nie używamy obiektów mock/stub dla kryptografii, XSD, HTTP ani API TEST. Scenariusze awarii używają prawdziwych lokalnych serwerów (TCP/HTTP). Szczegóły i granice: `docs/pl/testowanie.md`.
+
+## GitHub Actions (Linux, 2026-11-13)
+
+- **CI** na commicie `35487bf`: wszystkie 10 zadań zielone — PHP 8.2 / 8.3 / 8.4 (SDK), Laravel 12 na PHP 8.2 / 8.3 / 8.4, Node 22 / 24 (TypeScript + NestJS, `verify:pack`, przykład FA(3) offline), spójność repozytorium, audyt zależności i skan sekretów.
+- **Ręczny workflow „Live TEST”** na runnerze GitHub (Linux, PHP 8.4, Node 24): TypeScript, NestJS, PHP (11 testów, 40 asercji) i Laravel (1 test, 15 asercji) — zielone, w logach brak wpisów `SKIPPED`.
+- Pierwszy przebieg CI (commit `edf6429`) wykrył 3 realne problemy, naprawione przed wydaniem: kolejność budowania pakietów Node, brak `private_key_bits` dla kluczy EC w PHP < 8.4 oraz niemożność instalacji Laravel 11 (Composer blokuje wszystkie wydania 11.x z powodu poradników bezpieczeństwa — wsparcie zawężono do Laravel 12).

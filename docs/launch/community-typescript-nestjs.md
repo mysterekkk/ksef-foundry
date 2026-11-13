@@ -39,7 +39,7 @@ Repository: https://github.com/mysterekkk/ksef-foundry
 Issues and feedback: https://github.com/mysterekkk/ksef-foundry/issues
 Author: https://github.com/mysterekkk (LuroWeb)
 
-Test results for this release: [INSERT REPORT LINK BEFORE POSTING]
+Test results for this release: https://github.com/mysterekkk/ksef-foundry/blob/main/docs/dev/test-report.md
 
 ---
 
