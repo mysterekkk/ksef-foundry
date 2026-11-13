@@ -17,10 +17,10 @@
     "@luroweb/ksef-foundry": "*"
   },
   "devDependencies": {
-    "@peculiar/x509": "^1.12.0",
-    "@types/node": "^22.0.0",
+    "@peculiar/x509": "^3.1.0",
+    "@types/node": "^26.6.6",
     "reflect-metadata": "^0.2.2",
     "tsx": "^4.19.0",
-    "typescript": "~5.9.0"
+    "typescript": "~7.0.2"
   }
 }
