@@ -15,7 +15,7 @@
     "@luroweb/ksef-foundry": "*",
     "@luroweb/nestjs-ksef-foundry": "*",
     "@nestjs/common": "^11.2.10",
-    "@nestjs/config": "^4.0.4",
+    "@nestjs/config": "^12.1.1",
     "@nestjs/core": "^11.2.10",
     "@nestjs/platform-express": "^11.2.10",
     "reflect-metadata": "^0.2.2",
