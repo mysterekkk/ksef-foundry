@@ -4,5 +4,8 @@
   "description": "KSeF Foundry monorepo root (workspaces for the TypeScript packages and examples). Not published.",
   "license": "MIT",
   "engines": { "node": ">=22" },
-  "workspaces": ["packages/*", "examples/*"]
+  "workspaces": ["packages/*", "examples/*"],
+  "scripts": {
+    "build": "npm run build -w packages/typescript && npm run build -w packages/nestjs && npm run build -w examples/nestjs"
+  }
 }

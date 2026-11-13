@@ -24,7 +24,7 @@ jobs:
           coverage: none
           tools: composer:v2
       - run: npm ci --ignore-scripts
-      - run: npm run build -w @luroweb/ksef-foundry
+      - run: npm run build
       - name: TypeScript live
         run: npm run test:live -w @luroweb/ksef-foundry
       - name: NestJS live
