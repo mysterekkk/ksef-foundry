@@ -1,0 +1,28 @@
+{
+  "name": "ksef-foundry-example-nestjs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runnable NestJS example for @luroweb/nestjs-ksef-foundry (TEST environment only).",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@luroweb/ksef-foundry": "*",
+    "@luroweb/nestjs-ksef-foundry": "*",
+    "@nestjs/common": "^11.2.10",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.2.10",
+    "@nestjs/platform-express": "^11.2.10",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  }
+}

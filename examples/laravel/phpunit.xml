@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         cacheDirectory=".phpunit.cache"
+         colors="true"
+         failOnWarning="true"
+         failOnRisky="true"
+         displayDetailsOnSkippedTests="true">
+    <testsuites>
+        <testsuite name="default"><file>tests/Feature/KsefRoutesTest.php</file></testsuite>
+        <testsuite name="live"><file>tests/Feature/KsefLiveRoutesTest.php</file></testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <!-- throw-away key used only by the test run -->
+        <env name="APP_KEY" value="base64:dGVzdC1vbmx5LWtleS10ZXN0LW9ubHkta2V5LTEyMzQ="/>
+        <env name="CACHE_STORE" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="database"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="EXAMPLE_API_TOKEN" value="example-test-token-0123456789abcdef" force="true"/>
+        <env name="KSEF_ENVIRONMENT" value="test"/>
+        <env name="KSEF_CONTEXT_NIP" value="1111111111" force="true"/>
+        <env name="KSEF_TOKEN" value="fake-token-for-tests" force="true"/>
+        <env name="KSEF_LOG_CHANNEL" value=""/>
+    </php>
+</phpunit>

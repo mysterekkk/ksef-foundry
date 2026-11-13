@@ -1,0 +1,27 @@
+{
+    "name": "luroweb/ksef-foundry-example-php",
+    "description": "Runnable examples for luroweb/ksef-foundry (TEST environment only).",
+    "type": "project",
+    "license": "MIT",
+    "repositories": [
+        { "type": "path", "url": "../../packages/php", "options": { "symlink": true } }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "luroweb/ksef-foundry": "@dev"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "quickstart": "@php src/01-quickstart.php",
+        "build-validate": "@php src/02-build-and-validate.php",
+        "send": "@php src/03-send-invoice.php",
+        "errors": "@php src/04-error-handling.php",
+        "all": [
+            "@php src/01-quickstart.php",
+            "@php src/02-build-and-validate.php",
+            "@php src/03-send-invoice.php",
+            "@php src/04-error-handling.php"
+        ]
+    }
+}

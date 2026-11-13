@@ -1,0 +1,26 @@
+{
+  "name": "@luroweb/ksef-foundry-example-typescript",
+  "private": true,
+  "type": "module",
+  "description": "Runnable examples for @luroweb/ksef-foundry (TEST environment only).",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "01:quickstart": "tsx src/01-quickstart.ts",
+    "02:build-validate": "tsx src/02-build-and-validate.ts",
+    "03:send": "tsx src/03-send-invoice.ts",
+    "04:errors": "tsx src/04-error-handling.ts",
+    "all": "tsx src/01-quickstart.ts && tsx src/02-build-and-validate.ts && tsx src/03-send-invoice.ts && tsx src/04-error-handling.ts"
+  },
+  "dependencies": {
+    "@luroweb/ksef-foundry": "*"
+  },
+  "devDependencies": {
+    "@peculiar/x509": "^1.12.0",
+    "@types/node": "^22.0.0",
+    "reflect-metadata": "^0.2.2",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.0"
+  }
+}
