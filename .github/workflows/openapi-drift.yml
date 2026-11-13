@@ -1,0 +1,31 @@
+name: OpenAPI drift
+on:
+  schedule: [{ cron: '0 7 * * 1' }]
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with: { node-version: 22 }
+      - id: check
+        run: |
+          set +e
+          node scripts/check-openapi-drift.mjs | tee drift.txt
+          echo "code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+      - name: Open issue on drift (never changes code)
+        if: steps.check.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Official KSeF OpenAPI changed ($(date -u +%F))" \
+            --label "api-drift" --body "$(printf 'The official contract differs from schemas/openapi.\n\n```\n%s\n```\nReview the MF changelog, update SDKs + tests (incl. live TEST), then run `node scripts/check-openapi-drift.mjs --update`.' "$(tr -d "`@" < drift.txt)")" || true
+      - name: Fail on fetch errors
+        if: steps.check.outputs.code == '2'
+        run: exit 1

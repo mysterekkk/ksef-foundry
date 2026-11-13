@@ -1,0 +1,18 @@
+name: Feature request / Propozycja funkcji
+description: Suggest an improvement / Zaproponuj usprawnienie
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: Problem / use case }
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Link the KSeF API endpoint or documentation section if relevant.
+  - type: dropdown
+    id: pkg
+    attributes:
+      label: Package
+      options: [PHP, Laravel, TypeScript, NestJS, All]

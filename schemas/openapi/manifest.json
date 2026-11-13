@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-13T20:12:14.922Z",
+  "contracts": {
+    "test": {
+      "source": "https://api-test.ksef.mf.gov.pl/docs/v2/openapi.json",
+      "sha256": "57e3e0ff8dc1f1aa590dc323e5f2d3151fc06ebfdbbdb5b74d139459b7cdd8ac",
+      "infoTitle": "KSeF API TE",
+      "paths": 78
+    },
+    "demo": {
+      "source": "https://api-demo.ksef.mf.gov.pl/docs/v2/openapi.json",
+      "sha256": "927b0ed557ef49ec61242df1bc9e186efb9744f59b295a8b0966d2182dbe357f",
+      "infoTitle": "KSeF API TR",
+      "paths": 63
+    },
+    "prod": {
+      "source": "https://api.ksef.mf.gov.pl/docs/v2/openapi.json",
+      "sha256": "5312d69639f7713f25dfeba2e5e4380d3482ca7629ecfd76fab19cb1794be927",
+      "infoTitle": "KSeF API PR",
+      "paths": 63
+    }
+  }
+}

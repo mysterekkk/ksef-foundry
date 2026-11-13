@@ -1,0 +1,41 @@
+name: Bug report / Zgłoszenie błędu
+description: Something does not work as documented / Coś nie działa zgodnie z dokumentacją
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Nie wklejaj tokenów, kluczy, certyfikatów, NIP/PESEL ani treści faktur.** / Never paste tokens, keys, certificates or invoice content.
+        Podatności zgłaszaj prywatnie — zob. SECURITY.md. / Report vulnerabilities privately — see SECURITY.md.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options: [PHP (luroweb/ksef-foundry), Laravel, TypeScript (@luroweb/ksef-foundry), NestJS, Docs, Other]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: Package version, placeholder: 0.1.0 }
+    validations: { required: true }
+  - type: dropdown
+    id: env
+    attributes:
+      label: KSeF environment
+      options: [TEST, DEMO, PRODUCTION]
+    validations: { required: true }
+  - type: input
+    id: runtime
+    attributes: { label: Runtime (PHP / Node / Laravel / Nest versions) }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened? Expected? }
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes: { label: Minimal reproduction (no secrets) }
+  - type: textarea
+    id: diag
+    attributes:
+      label: Error diagnostics
+      description: Output of `diagnostics()` / `traceId` / KSeF error code. No tokens.

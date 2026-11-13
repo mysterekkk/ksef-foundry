@@ -1,0 +1,8 @@
+{
+  "name": "ksef-foundry-monorepo",
+  "private": true,
+  "description": "KSeF Foundry monorepo root (workspaces for the TypeScript packages and examples). Not published.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "workspaces": ["packages/*", "examples/*"]
+}

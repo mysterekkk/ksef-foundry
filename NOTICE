@@ -1,0 +1,17 @@
+KSeF Foundry — third-party material
+
+The directory `schemas/` contains unmodified copies of official material
+published by the Polish Ministry of Finance (Ministerstwo Finansów) in
+https://github.com/CIRFMF/ksef-api (MIT License, Copyright (c) 2025
+Ministerstwo Finansów):
+
+  - schemas/openapi/*.json   OpenAPI contracts of the KSeF API 2.0
+                             (TEST, DEMO, PRODUCTION)
+  - schemas/xsd/**           XSD schemas FA(2), FA(3), AuthTokenRequest, UPO
+
+Files under `schemas/xsd/**/resolved/` (if present) are derived copies in which
+only `schemaLocation` attributes were rewritten to local relative paths so that
+validation can run without network access. See scripts/ for the generator.
+
+KSeF Foundry is an independent open-source project. It is not affiliated with
+or endorsed by the Ministry of Finance.

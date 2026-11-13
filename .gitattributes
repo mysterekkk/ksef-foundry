@@ -1,0 +1,10 @@
+* text=auto eol=lf
+# Byte-exact material: hashes and golden files must not be touched by line-ending conversion.
+*.xsd -text
+schemas/** -text
+fixtures/** -text
+packages/*/resources/xsd/** -text
+*.php text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.png binary

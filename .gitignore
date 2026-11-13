@@ -1,0 +1,39 @@
+# dependencies
+node_modules/
+vendor/
+# build output
+dist/
+coverage/
+.phpunit.cache/
+.phpunit.result.cache
+.phpstan-cache/
+.php-cs-fixer.cache
+*.tsbuildinfo
+# environment & secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.ksef-secrets/
+# artifacts
+*.tgz
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+composer.lock.bak
+
+# libraries and examples do not commit lock files (examples resolve the local path packages)
+composer.lock
+*.pk8
+*.p8
+*.der
+*.crt
+*.cer
+.ksef-token-cache*
+*token-cache*
