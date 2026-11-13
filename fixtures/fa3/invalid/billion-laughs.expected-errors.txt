@@ -1,0 +1,1 @@
+code=doctype. Entity expansion bomb rejected before parsing; memory must not grow.

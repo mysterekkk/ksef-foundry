@@ -1,0 +1,57 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Nabywca Sp. z o.o.",
+        "address": {
+            "line1": "ul. Długa 5",
+            "line2": "80-001 Gdańsk"
+        }
+    },
+    "number": "FV/2026/03",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Usługa edukacyjna zwolniona",
+            "unit": "usł.",
+            "quantity": "1",
+            "unitNetPrice": "500.00",
+            "vatRate": "zw"
+        },
+        {
+            "name": "Usługa poza terytorium kraju",
+            "unit": "usł.",
+            "quantity": "2",
+            "unitNetPrice": "250.00",
+            "vatRate": "np I"
+        },
+        {
+            "name": "Usługa art. 100 ust. 1 pkt 4",
+            "unit": "usł.",
+            "quantity": "1",
+            "unitNetPrice": "80.00",
+            "vatRate": "np II"
+        },
+        {
+            "name": "Sprzedaż krajowa 0%",
+            "unit": "szt.",
+            "quantity": "5",
+            "unitNetPrice": "10.00",
+            "vatRate": "0 KR"
+        }
+    ],
+    "exemptionBasis": {
+        "type": "statute",
+        "text": "art. 43 ust. 1 pkt 26 ustawy o VAT"
+    }
+}

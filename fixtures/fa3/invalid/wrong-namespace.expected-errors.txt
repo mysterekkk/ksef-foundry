@@ -1,0 +1,2 @@
+code=xsd. Root element {FA(2) namespace}Faktura has no global declaration in the FA(3) schema.
+contains=No matching global declaration

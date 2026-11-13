@@ -1,0 +1,2 @@
+code=xsd. Required P_15 (gross total) is missing.
+contains=This element is not expected

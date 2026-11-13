@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-01-15T10:00:00Z</DataWytworzeniaFa>
+    <SystemInfo>KSeF Foundry fixtures</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <DaneIdentyfikacyjne>
+      <NIP>5260250274</NIP>
+      <Nazwa>Przykładowa Spółka z o.o.</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Prosta 1/2</AdresL1>
+      <AdresL2>00-001 Warszawa</AdresL2>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>1234563218</NIP>
+      <Nazwa>Nabywca Sp. z o.o.</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Długa 5</AdresL1>
+      <AdresL2>80-001 Gdańsk</AdresL2>
+    </Adres>
+    <JST>2</JST>
+    <GV>2</GV>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-01-15</P_1>
+    <P_2>FV/2026/05</P_2>
+    <P_13_1>7.00</P_13_1>
+    <P_14_1>1.61</P_14_1>
+    <P_15>8.61</P_15>
+    <Adnotacje>
+      <P_16>2</P_16>
+      <P_17>2</P_17>
+      <P_18>2</P_18>
+      <P_18A>2</P_18A>
+      <Zwolnienie>
+        <P_19N>1</P_19N>
+      </Zwolnienie>
+      <NoweSrodkiTransportu>
+        <P_22N>1</P_22N>
+      </NoweSrodkiTransportu>
+      <P_23>2</P_23>
+      <PMarzy>
+        <P_PMarzyN>1</P_PMarzyN>
+      </PMarzy>
+    </Adnotacje>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <P_7>Pozycja 1</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>2</NrWierszaFa>
+      <P_7>Pozycja 2</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>3</NrWierszaFa>
+      <P_7>Pozycja 3</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>4</NrWierszaFa>
+      <P_7>Pozycja 4</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>5</NrWierszaFa>
+      <P_7>Pozycja 5</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>6</NrWierszaFa>
+      <P_7>Pozycja 6</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>7</NrWierszaFa>
+      <P_7>Pozycja 7</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>8</NrWierszaFa>
+      <P_7>Pozycja 8</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>9</NrWierszaFa>
+      <P_7>Pozycja 9</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>10</NrWierszaFa>
+      <P_7>Pozycja 10</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>11</NrWierszaFa>
+      <P_7>Pozycja 11</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>12</NrWierszaFa>
+      <P_7>Pozycja 12</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>13</NrWierszaFa>
+      <P_7>Pozycja 13</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>14</NrWierszaFa>
+      <P_7>Pozycja 14</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>15</NrWierszaFa>
+      <P_7>Pozycja 15</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>16</NrWierszaFa>
+      <P_7>Pozycja 16</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>17</NrWierszaFa>
+      <P_7>Pozycja 17</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>18</NrWierszaFa>
+      <P_7>Pozycja 18</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>19</NrWierszaFa>
+      <P_7>Pozycja 19</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>20</NrWierszaFa>
+      <P_7>Pozycja 20</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>21</NrWierszaFa>
+      <P_7>Pozycja 21</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>22</NrWierszaFa>
+      <P_7>Pozycja 22</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>23</NrWierszaFa>
+      <P_7>Pozycja 23</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>24</NrWierszaFa>
+      <P_7>Pozycja 24</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>25</NrWierszaFa>
+      <P_7>Pozycja 25</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>26</NrWierszaFa>
+      <P_7>Pozycja 26</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>27</NrWierszaFa>
+      <P_7>Pozycja 27</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>28</NrWierszaFa>
+      <P_7>Pozycja 28</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>29</NrWierszaFa>
+      <P_7>Pozycja 29</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>30</NrWierszaFa>
+      <P_7>Pozycja 30</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>31</NrWierszaFa>
+      <P_7>Pozycja 31</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>32</NrWierszaFa>
+      <P_7>Pozycja 32</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>33</NrWierszaFa>
+      <P_7>Pozycja 33</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>34</NrWierszaFa>
+      <P_7>Pozycja 34</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>35</NrWierszaFa>
+      <P_7>Pozycja 35</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>36</NrWierszaFa>
+      <P_7>Pozycja 36</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>37</NrWierszaFa>
+      <P_7>Pozycja 37</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>38</NrWierszaFa>
+      <P_7>Pozycja 38</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>39</NrWierszaFa>
+      <P_7>Pozycja 39</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>40</NrWierszaFa>
+      <P_7>Pozycja 40</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>41</NrWierszaFa>
+      <P_7>Pozycja 41</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>42</NrWierszaFa>
+      <P_7>Pozycja 42</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>43</NrWierszaFa>
+      <P_7>Pozycja 43</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>44</NrWierszaFa>
+      <P_7>Pozycja 44</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>45</NrWierszaFa>
+      <P_7>Pozycja 45</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>46</NrWierszaFa>
+      <P_7>Pozycja 46</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>47</NrWierszaFa>
+      <P_7>Pozycja 47</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>48</NrWierszaFa>
+      <P_7>Pozycja 48</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>49</NrWierszaFa>
+      <P_7>Pozycja 49</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>50</NrWierszaFa>
+      <P_7>Pozycja 50</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>51</NrWierszaFa>
+      <P_7>Pozycja 51</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>52</NrWierszaFa>
+      <P_7>Pozycja 52</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>53</NrWierszaFa>
+      <P_7>Pozycja 53</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>54</NrWierszaFa>
+      <P_7>Pozycja 54</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>55</NrWierszaFa>
+      <P_7>Pozycja 55</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>56</NrWierszaFa>
+      <P_7>Pozycja 56</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>57</NrWierszaFa>
+      <P_7>Pozycja 57</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>58</NrWierszaFa>
+      <P_7>Pozycja 58</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>59</NrWierszaFa>
+      <P_7>Pozycja 59</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>60</NrWierszaFa>
+      <P_7>Pozycja 60</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>61</NrWierszaFa>
+      <P_7>Pozycja 61</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>62</NrWierszaFa>
+      <P_7>Pozycja 62</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>63</NrWierszaFa>
+      <P_7>Pozycja 63</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>64</NrWierszaFa>
+      <P_7>Pozycja 64</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>65</NrWierszaFa>
+      <P_7>Pozycja 65</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>66</NrWierszaFa>
+      <P_7>Pozycja 66</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>67</NrWierszaFa>
+      <P_7>Pozycja 67</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>68</NrWierszaFa>
+      <P_7>Pozycja 68</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>69</NrWierszaFa>
+      <P_7>Pozycja 69</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>70</NrWierszaFa>
+      <P_7>Pozycja 70</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>71</NrWierszaFa>
+      <P_7>Pozycja 71</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>72</NrWierszaFa>
+      <P_7>Pozycja 72</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>73</NrWierszaFa>
+      <P_7>Pozycja 73</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>74</NrWierszaFa>
+      <P_7>Pozycja 74</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>75</NrWierszaFa>
+      <P_7>Pozycja 75</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>76</NrWierszaFa>
+      <P_7>Pozycja 76</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>77</NrWierszaFa>
+      <P_7>Pozycja 77</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>78</NrWierszaFa>
+      <P_7>Pozycja 78</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>79</NrWierszaFa>
+      <P_7>Pozycja 79</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>80</NrWierszaFa>
+      <P_7>Pozycja 80</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>81</NrWierszaFa>
+      <P_7>Pozycja 81</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>82</NrWierszaFa>
+      <P_7>Pozycja 82</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>83</NrWierszaFa>
+      <P_7>Pozycja 83</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>84</NrWierszaFa>
+      <P_7>Pozycja 84</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>85</NrWierszaFa>
+      <P_7>Pozycja 85</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>86</NrWierszaFa>
+      <P_7>Pozycja 86</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>87</NrWierszaFa>
+      <P_7>Pozycja 87</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>88</NrWierszaFa>
+      <P_7>Pozycja 88</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>89</NrWierszaFa>
+      <P_7>Pozycja 89</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>90</NrWierszaFa>
+      <P_7>Pozycja 90</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>91</NrWierszaFa>
+      <P_7>Pozycja 91</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>92</NrWierszaFa>
+      <P_7>Pozycja 92</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>93</NrWierszaFa>
+      <P_7>Pozycja 93</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>94</NrWierszaFa>
+      <P_7>Pozycja 94</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>95</NrWierszaFa>
+      <P_7>Pozycja 95</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>96</NrWierszaFa>
+      <P_7>Pozycja 96</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>97</NrWierszaFa>
+      <P_7>Pozycja 97</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>98</NrWierszaFa>
+      <P_7>Pozycja 98</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>99</NrWierszaFa>
+      <P_7>Pozycja 99</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <FaWiersz>
+      <NrWierszaFa>100</NrWierszaFa>
+      <P_7>Pozycja 100</P_7>
+      <P_8A>szt.</P_8A>
+      <P_8B>1</P_8B>
+      <P_9A>0.07</P_9A>
+      <P_11>0.07</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+  </Fa>
+</Faktura>

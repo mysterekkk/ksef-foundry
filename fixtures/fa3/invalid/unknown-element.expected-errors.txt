@@ -1,0 +1,2 @@
+code=xsd. Element Nieznany is not allowed by the schema.
+contains=Nieznany

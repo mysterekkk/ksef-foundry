@@ -1,0 +1,31 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "none",
+        "name": "Jan Kowalski",
+        "address": {
+            "line1": "ul. Polna 3",
+            "line2": "30-001 Kraków"
+        }
+    },
+    "number": "FV/2026/09",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Sprzedaż detaliczna",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "81.30",
+            "vatRate": "23"
+        }
+    ]
+}

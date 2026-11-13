@@ -1,0 +1,1 @@
+code=bom. UTF-8 BOM (EF BB BF) is forbidden by KSeF.

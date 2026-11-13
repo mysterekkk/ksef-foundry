@@ -1,0 +1,74 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Nabywca Sp. z o.o.",
+        "address": {
+            "line1": "ul. Długa 5",
+            "line2": "80-001 Gdańsk"
+        }
+    },
+    "number": "FV/2026/04",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Trzy razy 33,33",
+            "unit": "szt.",
+            "quantity": "3",
+            "unitNetPrice": "33.33",
+            "vatRate": "23"
+        },
+        {
+            "name": "Ilość 0,333",
+            "unit": "szt.",
+            "quantity": "0.333",
+            "unitNetPrice": "100.00",
+            "vatRate": "23"
+        },
+        {
+            "name": "Cena 0,005 (granica)",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.005",
+            "vatRate": "23"
+        },
+        {
+            "name": "Cena 0,004 (poniżej granicy)",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.004",
+            "vatRate": "23"
+        },
+        {
+            "name": "Ilość 0,5 x cena 0,01",
+            "unit": "szt.",
+            "quantity": "0.5",
+            "unitNetPrice": "0.01",
+            "vatRate": "8"
+        },
+        {
+            "name": "Cena 8 miejsc",
+            "unit": "szt.",
+            "quantity": "1.123456",
+            "unitNetPrice": "0.12345678",
+            "vatRate": "8"
+        },
+        {
+            "name": "Ujemne zaokrąglenie? nie: 2,675",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "2.675",
+            "vatRate": "5"
+        }
+    ]
+}

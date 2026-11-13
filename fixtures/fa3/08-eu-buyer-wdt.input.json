@@ -1,0 +1,34 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "eu",
+        "euPrefix": "DE",
+        "euVatNumber": "123456789",
+        "name": "Muster GmbH",
+        "address": {
+            "line1": "Hauptstrasse 1",
+            "line2": "10115 Berlin",
+            "country": "DE"
+        }
+    },
+    "number": "FV/2026/08",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Dostawa towarów WDT",
+            "unit": "szt.",
+            "quantity": "10",
+            "unitNetPrice": "99.99",
+            "vatRate": "0 WDT"
+        }
+    ]
+}

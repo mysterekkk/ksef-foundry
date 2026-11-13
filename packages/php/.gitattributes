@@ -1,0 +1,12 @@
+* text=auto eol=lf
+/tests export-ignore
+/phpunit.xml export-ignore
+/phpstan.neon export-ignore
+/phpcs.xml export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/phpstan-tests.neon export-ignore
+/resources/xsd/FA3/SHA256SUMS.txt -diff
+*.xsd -text
+/resources/xsd/** -text
+/resources/xsd/**/SHA256SUMS.txt -text

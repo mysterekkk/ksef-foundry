@@ -1,0 +1,50 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Żółć & Gęś \"Ąę\" <Sp.> z o.o.",
+        "address": {
+            "line1": "ul. Św. Józefa 1 'A'",
+            "line2": "00-001 Łódź"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Ćma & Ś <b>bold</b> ]]> \"q\" 'a'",
+        "address": {
+            "line1": "ul. Źródlana 9",
+            "line2": "90-001 Łódź"
+        }
+    },
+    "number": "FV/2026/06",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Śledź w oleju & \"cebula\" <tag> ]]> 'x' – zażółć gęślą jaźń 😀",
+            "unit": "szt.",
+            "quantity": "2",
+            "unitNetPrice": "12.34",
+            "vatRate": "8"
+        },
+        {
+            "name": "Tab\ti nowa linia\nzwinięte",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "1.00",
+            "vatRate": "23"
+        }
+    ],
+    "additionalInfo": [
+        {
+            "key": "Uwaga",
+            "value": "</Wartosc><Klucz>x & y"
+        },
+        {
+            "key": "Emoji",
+            "value": "zażółć 日本語 العربية"
+        }
+    ],
+    "footer": "Stopka z & < > \" ' i wieloma\nliniami: żółć."
+}

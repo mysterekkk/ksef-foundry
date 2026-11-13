@@ -1,0 +1,40 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć x",
+        "address": {
+            "line1": "Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć x",
+            "line2": "Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć x"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Nabywca Sp. z o.o.",
+        "address": {
+            "line1": "ul. Długa 5",
+            "line2": "80-001 Gdańsk"
+        }
+    },
+    "number": "FV/9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "issuePlace": "ąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąąą",
+    "lines": [
+        {
+            "name": "Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć gęślą jaźń Zażółć x",
+            "unit": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+            "quantity": "1",
+            "unitNetPrice": "10.00",
+            "vatRate": "23"
+        }
+    ],
+    "additionalInfo": [
+        {
+            "key": "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
+            "value": "żżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżżż"
+        }
+    ],
+    "footer": "Linia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLinia stopki żółć.\nLini"
+}

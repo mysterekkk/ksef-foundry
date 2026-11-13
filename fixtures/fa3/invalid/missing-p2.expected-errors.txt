@@ -1,0 +1,2 @@
+code=xsd. Required element P_2 (invoice number) is missing; libxml reports an unexpected element (P_13_1) where P_2 is expected.
+contains=This element is not expected

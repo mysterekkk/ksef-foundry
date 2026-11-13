@@ -1,0 +1,725 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Nabywca Sp. z o.o.",
+        "address": {
+            "line1": "ul. Długa 5",
+            "line2": "80-001 Gdańsk"
+        }
+    },
+    "number": "FV/2026/05",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Pozycja 1",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 2",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 3",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 4",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 5",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 6",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 7",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 8",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 9",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 10",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 11",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 12",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 13",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 14",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 15",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 16",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 17",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 18",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 19",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 20",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 21",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 22",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 23",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 24",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 25",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 26",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 27",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 28",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 29",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 30",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 31",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 32",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 33",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 34",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 35",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 36",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 37",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 38",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 39",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 40",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 41",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 42",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 43",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 44",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 45",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 46",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 47",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 48",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 49",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 50",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 51",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 52",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 53",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 54",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 55",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 56",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 57",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 58",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 59",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 60",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 61",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 62",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 63",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 64",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 65",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 66",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 67",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 68",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 69",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 70",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 71",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 72",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 73",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 74",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 75",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 76",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 77",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 78",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 79",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 80",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 81",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 82",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 83",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 84",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 85",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 86",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 87",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 88",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 89",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 90",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 91",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 92",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 93",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 94",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 95",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 96",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 97",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 98",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 99",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        },
+        {
+            "name": "Pozycja 100",
+            "unit": "szt.",
+            "quantity": "1",
+            "unitNetPrice": "0.07",
+            "vatRate": "23"
+        }
+    ]
+}

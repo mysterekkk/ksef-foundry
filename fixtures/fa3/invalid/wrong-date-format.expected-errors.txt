@@ -1,0 +1,2 @@
+code=xsd. P_1 is not a valid etd:TData / xsd:date (pattern YYYY-MM-DD).
+contains=not a valid value

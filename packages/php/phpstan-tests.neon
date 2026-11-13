@@ -1,0 +1,6 @@
+# Tests are analysed at level 6: decoded JSON fixtures are intentionally loosely typed (mixed) there.
+parameters:
+    level: 6
+    paths:
+        - tests
+    tmpDir: .phpstan-cache-tests

@@ -1,0 +1,1 @@
+code=encoding. Prolog declares a non-UTF-8 encoding.

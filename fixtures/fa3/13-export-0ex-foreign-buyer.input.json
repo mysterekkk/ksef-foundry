@@ -1,0 +1,34 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "foreign",
+        "countryCode": "US",
+        "taxId": "EIN 12-3456789",
+        "name": "Acme Inc.",
+        "address": {
+            "line1": "1 Main St",
+            "line2": "New York, NY 10001",
+            "country": "US"
+        }
+    },
+    "number": "FV/2026/13",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Eksport towarów",
+            "unit": "szt.",
+            "quantity": "3",
+            "unitNetPrice": "1500.50",
+            "vatRate": "0 EX"
+        }
+    ]
+}

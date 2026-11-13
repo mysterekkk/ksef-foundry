@@ -1,0 +1,2 @@
+code=xsd. P_13_1 has 3 fractional digits; TKwotowy allows at most 2.
+contains=fractionDigits

@@ -1,0 +1,1 @@
+code=forbidden-char. Raw U+0091 is inside the KSeF-forbidden range [#x86-#x9F].

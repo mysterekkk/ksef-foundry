@@ -1,0 +1,1 @@
+code=doctype. DOCTYPE/entity declarations are rejected before parsing (XXE); no file or network access.

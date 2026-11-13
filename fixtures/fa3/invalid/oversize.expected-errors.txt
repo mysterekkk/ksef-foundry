@@ -1,0 +1,1 @@
+code=size. Not stored as a file (would be >3 MB). Generate in the test: take 01-single-line-23.expected.xml and insert an XML comment of 3,000,001 bytes after the prolog; validateFa3() with the default limit (3,000,000) must fail with code=size before any parsing.

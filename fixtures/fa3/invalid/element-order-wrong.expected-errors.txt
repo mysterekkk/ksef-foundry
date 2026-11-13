@@ -1,0 +1,2 @@
+code=xsd. Sequence order violated: Fa/P_1 appears before Fa/KodWaluty.
+contains=This element is not expected

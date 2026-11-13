@@ -1,0 +1,57 @@
+{
+    "seller": {
+        "nip": "5260250274",
+        "name": "Przykładowa Spółka z o.o.",
+        "address": {
+            "line1": "ul. Prosta 1/2",
+            "line2": "00-001 Warszawa"
+        }
+    },
+    "buyer": {
+        "idType": "nip",
+        "nip": "1234563218",
+        "name": "Nabywca Sp. z o.o.",
+        "address": {
+            "line1": "ul. Długa 5",
+            "line2": "80-001 Gdańsk"
+        }
+    },
+    "number": "FV/2026/10",
+    "issueDate": "2026-01-15",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "systemInfo": "KSeF Foundry fixtures",
+    "lines": [
+        {
+            "name": "Abonament",
+            "unit": "mc",
+            "quantity": "12",
+            "unitNetPrice": "49.00",
+            "vatRate": "23"
+        }
+    ],
+    "issuePlace": "Warszawa",
+    "saleDate": "2026-01-10",
+    "payment": {
+        "method": 6,
+        "dueDates": [
+            "2026-01-29"
+        ],
+        "bankAccounts": [
+            {
+                "number": "61109010140000071219812874",
+                "bankName": "Bank Przykładowy S.A.",
+                "description": "Rachunek podstawowy"
+            },
+            {
+                "number": "DE89370400440532013000",
+                "swift": "COBADEFFXXX"
+            }
+        ]
+    },
+    "additionalInfo": [
+        {
+            "key": "Zamówienie",
+            "value": "ZAM/2026/77"
+        }
+    ]
+}

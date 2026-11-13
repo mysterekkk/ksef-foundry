@@ -1,0 +1,1 @@
+code=utf8. Latin-1/ISO-8859-2 byte 0xF3 is not valid UTF-8.

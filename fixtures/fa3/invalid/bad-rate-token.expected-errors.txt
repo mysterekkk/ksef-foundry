@@ -1,0 +1,2 @@
+code=xsd. P_12 "23%" is not in the TStawkaPodatku enumeration (23,22,8,7,5,4,3,0 KR,0 WDT,0 EX,zw,oo,np I,np II).
+contains=enumeration
